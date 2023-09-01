@@ -10,6 +10,7 @@ echo 'sonarqube:sonarqube' | sudo chpasswd
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
 
 # Unzip the downloaded ZIP file
+sudo apt -y install unzip
 sudo unzip sonarqube-9.4.0.54424.zip -d /opt
 
 # Set permissions and ownership for the SonarQube installation
